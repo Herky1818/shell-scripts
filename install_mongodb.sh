@@ -12,12 +12,12 @@ echo "#  Auto Install mongodb for centos6/7.x ##"
 echo "#       Press Ctrl + C to cancel        ##"
 echo "#       Any key to continue             ##"
 echo "##########################################"
-echo "(1) Install Mongodb-3.2"
-echo "(2) Install Mongodb-3.4"
-echo "(3) Install Mongodb-3.6"
+echo "(1) Install Mongodb-4.2"
+echo "(2) Install Mongodb-4.4"
+echo "(3) Install Mongodb-4.6"
 echo "(4) EXIT"
 read -p "Please input your choice:" NUM
-if [ ${sys_version} == "6" ];then
+if [ ${sys_version} == "7" ];then
 	case $NUM in 
 	1)
 	       mongodb_url="https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-rhel62-3.2.20.tgz"	
